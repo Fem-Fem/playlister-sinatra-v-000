@@ -42,7 +42,7 @@ class ApplicationController < Sinatra::Base
     else
       @song.artist = Artist.find_by(name: params["Artist Name"])
     end
-    binding.pry
+    # binding.pry
     @song.genre_ids = params["genres"]
     @song.save
     flash[:message] = "Successfully created song."
