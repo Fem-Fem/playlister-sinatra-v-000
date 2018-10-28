@@ -27,7 +27,7 @@ class ApplicationController < Sinatra::Base
     erb :newsong
 
     # redirect_to '/songs/:slug'
-    binding.pry
+    # binding.pry
   end
 
   get '/songs/:slug' do
