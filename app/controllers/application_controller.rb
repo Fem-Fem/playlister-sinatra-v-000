@@ -43,7 +43,6 @@ class ApplicationController < Sinatra::Base
     end
     @song.genre_ids = params["genres"]
     @song.save
-    binding.pry
     flash[:message] = "Successfully created song."
     redirect "songs/#{@song.slug}"
     # get params
