@@ -46,6 +46,7 @@ class ApplicationController < Sinatra::Base
     @song.genre_ids = params["genres"]
     @song.save
     flash[:message] = "Successfully created song."
+    binding.pry
     redirect "songs/#{@song.slug}"
     # get params
     # check to see if artist exists
