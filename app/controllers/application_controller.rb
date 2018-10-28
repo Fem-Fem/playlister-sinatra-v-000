@@ -25,6 +25,7 @@ class ApplicationController < Sinatra::Base
   get '/songs/new' do
     @genres = Genre.all
     erb :newsong
+    redirect_to '/songs/:slug'
     # binding.pry
   end
 
