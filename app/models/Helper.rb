@@ -5,7 +5,6 @@ class Helper
   end
 
   def self.find_by_slug(input)
-    # binding.pry
     # return input.split("-").join(" ").titleize
     y = ["with", "the", "for", "is", "of", "a"]
     reverse_slug = []
